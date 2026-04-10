@@ -18,9 +18,9 @@ The `@` says "the next thing is C#, not HTML." Razor reads until it figures out 
 
 ```mermaid
 flowchart LR
-    HTML1[HTML: <p>Hello, ] --> AT1[@] --> CS1[C#: Name]
-    CS1 --> HTML2[HTML: , you have ] --> AT2[@] --> CS2[C#: Count]
-    CS2 --> HTML3[HTML: messages</p>]
+    HTML1["HTML: &lt;p&gt;Hello, "] --> AT1["@"] --> CS1["C#: Name"]
+    CS1 --> HTML2["HTML: , you have "] --> AT2["@"] --> CS2["C#: Count"]
+    CS2 --> HTML3["HTML: messages&lt;/p&gt;"]
 
     style HTML1 fill:#2d7a2d,color:#fff
     style HTML2 fill:#2d7a2d,color:#fff
@@ -43,7 +43,7 @@ flowchart TB
     Razor --> Dir[Directives<br/>@page, @inject]
     Razor --> Expr[Expressions<br/>@name]
     Razor --> Stmt[Statements<br/>@if, @foreach]
-    Razor --> Code[Code blocks<br/>@code, @{}]
+    Razor --> Code["Code blocks<br/>@code, @{}"]
     Razor --> Attr[Attributes<br/>@onclick, @bind]
 
     style Razor fill:#5f3a1e,color:#fff

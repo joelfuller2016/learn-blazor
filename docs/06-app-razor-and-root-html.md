@@ -107,10 +107,10 @@ These three lines load CSS files. But notice the `@Assets[...]` wrapper — that
 
 ```mermaid
 flowchart LR
-    Src[app.css<br/>content: body { color: red }] --> Hash[Compute hash<br/>abc123]
+    Src["app.css<br/>content: body { color: red }"] --> Hash[Compute hash<br/>abc123]
     Hash --> URL[Final URL:<br/>/app.abc123.css]
 
-    Change[app.css<br/>content: body { color: blue }] --> Hash2[Different hash<br/>def456]
+    Change["app.css<br/>content: body { color: blue }"] --> Hash2[Different hash<br/>def456]
     Hash2 --> URL2[Final URL:<br/>/app.def456.css]
 
     style Src fill:#5f3a1e,color:#fff

@@ -374,8 +374,8 @@ Notice that `MainLayout.razor` has a sibling file called `MainLayout.razor.css`.
 
 ```mermaid
 flowchart LR
-    Source[MainLayout.razor.css<br/>.page { ... }] --> Build[Build process]
-    Build --> Output[Rewritten CSS<br/>.page[b-abc123] { ... }]
+    Source["MainLayout.razor.css<br/>.page { ... }"] --> Build[Build process]
+    Build --> Output["Rewritten CSS<br/>.page[b-abc123] { ... }"]
     Output --> Final[Only applies to<br/>MainLayout.razor elements]
 
     style Source fill:#3a3a3a,color:#fff
